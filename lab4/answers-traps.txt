@@ -1,8 +1,0 @@
-1. a0-a7; a2;
-2. No such codes. g() has been inlined into f(), and f() has been inlined into main().
-3. 0x0000000000000628, main calls it with pc-relative addressing.
-4. 0x0000000000000038, next line of assembly right after the jalr.
-5. HE110 World; i=0x726c6400; No, because 57616 is E110 in hex regardless of endianness.
-6. A random value depending on what codes there are right before the call.Because printf tried to read more arguments than supplied.
-   The second argument `3` is passed in a1, and the register for the third argument, a2, is not set to any specific value before the
-   call, and contains whatever there is before the call and will be printed.
